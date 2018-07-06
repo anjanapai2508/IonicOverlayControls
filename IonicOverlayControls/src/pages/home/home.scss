@@ -1,0 +1,110 @@
+page-home {
+    .ionButton
+    {
+        height: 30px;
+        width: 80px;
+        font-size: 0.8em;
+        background-color: transparent;
+        -webkit-text-fill-color: white;
+    }
+    .mainContent
+    {
+         height: 100%;
+        width: 100%;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0px;
+        bottom: 0;
+        overflow: hidden ;
+        text-align: center;
+        span
+        {
+            position: relative;
+            top: 50%;
+        }
+    }
+    .top-overlay-visible
+    {
+      height: 20%;
+      width: 100%;
+      top:30px;
+      left: 0;
+      margin-left: 0% ;
+      background: linear-gradient(to top, transparent 0%, black 100%);
+      background: -moz-linear-gradient(to top, transparent 0%, black 100%);
+      background: -webkit-linear-gradient(to top, transparent 0%, black 100%);
+      background: -o-linear-gradient(to top, transparent 0%, black 100%);
+      position: fixed;
+      z-index: 20;
+    }
+    .bottom-overlay-visible
+    {
+      height: 20%;
+      width: 100%;
+      bottom: 0px;
+      left: 0;
+      margin-bottom: 0%;
+      margin-left: 0% ;
+      background:linear-gradient(to bottom, transparent 0%, black);
+      background: -moz-linear-gradient(to bottom, transparent 0%, black);
+      background: -webkit-linear-gradient(to bottom, transparent 0%, black);
+      background: -o-linear-gradient(to bottom, transparent 0%, black);
+      position: fixed;
+    }
+    .topOverlayElements
+    {
+      display: inline-block;
+      position: fixed;
+      width: 100%;
+      font-size: 1em;
+      line-height: 1em;
+      top:80px;
+      text-align: center;
+      color: white;
+      span
+      {
+        font-size: 1.5em;
+      }
+    }
+    
+    .bottomOverlayElements
+    {
+      display: inline-block;
+      position: fixed;
+      width: 100%;
+      font-size: 1em;
+      line-height: 1em;
+      bottom: 20px;
+      text-align: center;
+      color: white;
+      span
+      {
+        font-size: 1.5em;
+      }
+    }
+    .top-overlay-hidden
+    {
+      visibility: hidden;
+      opacity: 0;
+    }
+    .bottom-overlay-hidden
+    {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .fadeOut
+    {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s 5s, opacity 5s linear;
+    }
+    .fadeIn
+    {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 1s linear;
+    }
+
+}

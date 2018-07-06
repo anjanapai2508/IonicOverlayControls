@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Video Player
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class= "overlay-visible top-overlay-visible" id="topOverlay">
+    <div class="topOverlayElements">
+        <span>Top Overlay Text or Buttons</span>
+    </div>
+</div>
+<div class="mainContent" (click)="toggleOverlayByUser()">
+    <span>Touch anywhere to enable/disable controls</span>
+</div>
+<div class= "overlay-visible bottom-overlay-visible" id="bottomOverlay">
+  <div class="bottomOverlayElements">
+      <span>Bottom Overlay Text or Buttons</span>
+      <button ion-button  clear class="ionButton" (click)="resetIdleTimer()">Reset</button>
+  </div>
+</div>
+</ion-content>
